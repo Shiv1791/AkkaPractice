@@ -1,1 +1,0 @@
-[warn] insecure HTTP request is deprecated 'http://dl.bintray.com/content/algd/maven'; switch to HTTPS or opt-in as ("bintray algd" at "http://dl.bintray.com/content/algd/maven").withAllowInsecureProtocol(true)

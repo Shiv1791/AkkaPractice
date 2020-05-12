@@ -1,4 +1,0 @@
-[warn] insecure HTTP request is deprecated 'http://dl.bintray.com/content/algd/maven'; switch to HTTPS or opt-in as ("bintray algd" at "http://dl.bintray.com/content/algd/maven").withAllowInsecureProtocol(true)
-[debug] Other repositories:
-[debug] Default repositories:
-[debug] Using inline dependencies specified in Scala.

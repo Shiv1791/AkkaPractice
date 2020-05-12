@@ -16,12 +16,7 @@ val commonDeps = Seq(
     testDependencies(scalaTest, mockitoCore, akkaTestKit )
 )
 
-// Definition of modules that make up this project
-lazy val common = BaseProject("common")
-  .settings(commonDeps)
-
 lazy val akka_practice = BaseProject("akka-practice")
   .settings(commonDeps)
   .settings(libraryDependencies ++= compiledDependencies(akkaActor1, akkaStream))
   .configs(IntegrationTest.extend(Test))
-  .dependsOn(common)
