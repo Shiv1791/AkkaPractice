@@ -5,21 +5,13 @@ import akka.actor.typed.{ActorSystem, Behavior, Terminated}
 import akka.actor.typed.scaladsl.Behaviors
 
 object Main {
-  def apply(): Behavior[NotUsed] =
-    Behaviors.setup { context =>
-      val chatRoom = context.spawn(ChatRoom(), "chatroom")
-      val gabblerRef = context.spawn(Gabbler(), "gabbler")
-      context.watch(gabblerRef)
-      chatRoom ! ChatRoom.GetSession("ol’ Gabbler", gabblerRef)
-
-      Behaviors.receiveSignal {
-        case (_, Terminated(_)) =>
-          Behaviors.stopped
-      }
-    }
+  val system: ActorSystem[HelloWorldMain.SayHello] =
+    ActorSystem(HelloWorldMain(), "hello")
 
   def main(args: Array[String]): Unit = {
-    ActorSystem(Main(), "ChatRoomDemo")
+
+    system ! HelloWorldMain.SayHello("World")
+    system ! HelloWorldMain.SayHello("Akka")
   }
 
 }

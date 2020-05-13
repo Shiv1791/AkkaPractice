@@ -12,7 +12,7 @@ final case class GetSession(screenName: String, replyTo: ActorRef[SessionEvent])
 sealed trait SessionEvent
 final case class SessionGranted(handle: ActorRef[PostMessage]) extends SessionEvent
 final case class SessionDenied(reason: String) extends SessionEvent
-final case class MessagePosted(screenName: String, message: String) extends SessionEvent
+final case class MessagePosted(screenName: String, msg: String) extends SessionEvent
 
 trait SessionCommand
 final case class PostMessage(message: String) extends SessionCommand
