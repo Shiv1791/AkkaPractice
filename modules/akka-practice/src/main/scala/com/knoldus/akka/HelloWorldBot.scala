@@ -1,8 +1,9 @@
+/*
 package com.knoldus.akka
 
 import akka.actor.typed.Behavior
 import akka.actor.typed.scaladsl.Behaviors
-import com.knoldus.classicakka.SomePractice
+
 
 
 object HelloWorldBot {
@@ -23,3 +24,4 @@ object HelloWorldBot {
   }
   
 }
+*/

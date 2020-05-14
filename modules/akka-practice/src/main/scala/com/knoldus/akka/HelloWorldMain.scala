@@ -1,3 +1,4 @@
+/*
 package com.knoldus.akka
 
 import akka.actor.typed.{ActorSystem, Behavior}
@@ -26,4 +27,4 @@ object HelloWorldMain {
     system ! HelloWorldMain.SayHello("World")
     system ! HelloWorldMain.SayHello("Akka")
   }
-}
+}*/
