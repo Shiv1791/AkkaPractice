@@ -1,0 +1,4 @@
+[warn] insecure HTTP request is deprecated 'http://dl.bintray.com/content/algd/maven'; switch to HTTPS or opt-in as ("bintray algd" at "http://dl.bintray.com/content/algd/maven").withAllowInsecureProtocol(true)
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/home/knoldus/workspace/akkaonline/"), "akka-practice")...
+[debug] Done updating ProjectRef(uri("file:/home/knoldus/workspace/akkaonline/"), "akka-practice")
